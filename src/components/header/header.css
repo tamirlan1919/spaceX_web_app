@@ -1,0 +1,28 @@
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+ul li a{
+    transition:  all .2s;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    font-size: 18px;
+    padding-top: 40px;
+}
+ul li a:hover{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #929292;
+    color: #929292;
+}
+header img{
+    margin-left: 28px;
+}

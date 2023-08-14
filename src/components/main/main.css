@@ -1,0 +1,45 @@
+main{
+    padding-top: 158px;
+}
+main h1{
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60px;
+    background: linear-gradient(to right, #fff, #ff460d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    max-width: 477px;
+    z-index: -3;
+    overflow-x: hidden;
+}
+main button{
+    background: url('../../../public/01.png');
+    background-position: left;
+    margin-top: 88px;
+    padding: 10px 27px;
+    background: inherit;
+    color: #fff;
+    border: 2px solid #21395f;
+}
+main .wrapper{
+    
+    position: relative;
+    top: -100px;
+    right: -210px;
+    color: #fff;
+    display: flex;
+    text-align: center;
+}
+main .info{
+    width: 160px;
+    padding: 25px ;
+    margin-right: 13px;
+    box-shadow: 7px 7px 12px inherit;
+    background: url('../../../public/lin.png');
+}
+main .info h2{
+    font-size: 35px;
+    font-weight: 700;
+}
