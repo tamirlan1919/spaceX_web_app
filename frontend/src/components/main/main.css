@@ -1,0 +1,146 @@
+main{
+    padding-top: 158px;
+}
+main h1{
+    font-family: 'Roboto';
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60px;
+    background: linear-gradient(to right, #fff, #ff460d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: -3;
+    overflow-x: hidden;
+
+    border-top-right-radius: 50px ;
+    border-bottom-right-radius: 80px ;
+    
+
+}
+
+
+
+main .red{
+    font-family: 'Roboto';
+
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    background: linear-gradient(to right, #fff, #ff460d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    max-width: 477px;
+    z-index: -3;
+    overflow-x: hidden;
+}
+
+
+
+main button{
+    background: url('../../../public/01.png');
+    background-position: left;
+    margin-top: 88px;
+    padding: 10px 27px;
+    background: inherit;
+    color: #fff;
+    border: 2px solid #21395f;
+}
+main .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,0fr);
+    
+    position: relative;
+    top: -100px;
+    right: -210px;
+    color: #fff;
+
+    text-align: center;
+}
+main .info{
+    
+    width: 160px;
+    padding: 25px ;
+    margin-right: 13px;
+    box-shadow: 7px 7px 12px inherit;
+    background: url('../../../public/lin.png');
+}
+main .info h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+main button{
+    margin-bottom: 100px;
+}
+
+@media(max-width:1279px){
+    main h1{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:1100px){
+    main .wrapper{
+    
+        position: relative;
+        top: -100px;
+        right: -140px;
+        color: #fff;
+        
+        text-align: center;
+    }
+}
+
+@media(max-width:990px){
+    main h1{
+        text-align: center;
+    }
+    main .red{
+        font-size: 25px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    main{
+        text-align: center;
+    }
+   main .wrapper{
+    
+        position: static;
+        display: flex;
+    }
+    main .boxes{
+        justify-content: space-around;
+        display: flex;
+    }
+}
+
+@media(max-width:700px){
+    main h1{
+        font-size: 40px;
+    }
+    main .red{
+        font-size: 24px;
+    }
+    main button{
+        font-size: 22px;
+    }
+    main .boxes{
+        margin-top: 50px;
+        width: 100%;
+        
+        text-align: center;
+    
+        display: block;
+    }
+    main .wrapper{
+        display: grid;
+        justify-content: center;
+    }
+ 
+}
+
