@@ -2,23 +2,20 @@
 FROM python:3.11-alpine
 
 # рабочая директория
-WORKDIR /usr/src/app
-RUN mkdir -p $WORKDIR/static
-RUN mkdir -p $WORKDIR/media
+FROM  python:3.8.13-bullseye
 
-# переменные окружения для python
-#не создавать файлы кэша .pyc
-ENV PYTHONDONTWRITEBYTECODE 1
-# не помещать в буфер потоки stdout и stderr
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONUNBUFFERED=1
 
-# обновим pip
-RUN pip install --upgrade pip
+WORKDIR /backend
 
 # скопируем и установим зависимости. эта операция закешируется 
 # и будет перезапускаться только при изменении requirements.txt
 COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 
-# копируем всё что осталось.
-COPY . .
+# copy from the current directory of the Dockerfile to /api in the image
+COPY . . 
+
+EXPOSE 8000
+
+
