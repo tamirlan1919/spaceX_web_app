@@ -12,3 +12,6 @@ class MenuAPIView(generics.ListAPIView):
 class AdvatagesAPIView(generics.ListAPIView):
     queryset = Advantages.objects.all()
     serializer_class = AdvantagesSerializer
+
+def index(request):
+    return render(request, 'index.html')

@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from api import views
-
+import os
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',views.index),
     path('api/menu/', views.MenuAPIView.as_view()),
     path('api/advantages/', views.AdvatagesAPIView.as_view()),
 ]

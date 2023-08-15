@@ -1,11 +1,18 @@
+
 services:
   api:
-    build: ./backend        
+    build: ./backend
     ports:
       - "8000:8000"
     volumes:
       - ./backend:/backend
-    command: bash -c "python manage.py runserver 0.0.0.0:8000"
+    command: bash -c "python3 manage.py runserver 0.0.0.0:8000"
+
+    depends_on:
+      - web
+    
+
+
 
   web:
     build: ./frontend
@@ -13,4 +20,8 @@ services:
       - "3000:3000"
     volumes:
       - ./frontend:/frontend
-    command: npm start
+
+
+
+      
+
